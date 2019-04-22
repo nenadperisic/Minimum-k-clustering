@@ -1,2 +1,2 @@
-# minimum-k-clustering
+# Minimum-k-clustering
 Project within the computer intelligence course
