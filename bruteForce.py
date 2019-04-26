@@ -1,3 +1,5 @@
+# from google.colab import drive
+# drive.mount('/content/gdrive')
 from math import sqrt
 import random
 import numpy as np
@@ -24,7 +26,7 @@ def distance(a, b):
 
 def partition(collection):
 
-    if len(collection) == 2:
+    if len(collection) == 1:
         yield [collection]
         return
 
@@ -57,6 +59,7 @@ def main():
 
     numOfPoints = 6
     points = []
+    # with open("/content/gdrive/My Drive/Colab Notebooks/points1.txt", "r") as f:
     with open("points.txt", "r") as f:
         lines = f.read().split("\n")
         for line in lines:
