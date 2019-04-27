@@ -1,14 +1,13 @@
-# from google.colab import drive
-# drive.mount('/content/gdrive')
 from math import sqrt
 import random
 import numpy as np
 import sys
 
 class Point:
-    def __init__(self,x_init,y_init):
+    def __init__(self,x_init,y_init, field_init):
         self.x = x_init
         self.y = y_init
+        self.field_init = field_init
 
     def getX(self):
         return self.X
@@ -17,7 +16,7 @@ class Point:
         return self.Y
 
     def __repr__(self):
-        return "".join(["(", str(self.x), ",", str(self.y), ")"])
+        return "".join(["{(", str(self.x), ",", str(self.y), "), ", str(self.field_init),"}"])
 
 
 def distance(a, b):
@@ -57,14 +56,15 @@ def main():
     #         f1.write(str(e) + "\n")
 
 
-    numOfPoints = 6
+    numOfPoints = 10
     points = []
-    # with open("/content/gdrive/My Drive/Colab Notebooks/points1.txt", "r") as f:
-    with open("points.txt", "r") as f:
+    with open("points1.txt", "r") as f:
         lines = f.read().split("\n")
+        i = 0
         for line in lines:
             l = line.split(",")
-            points.append(Point(int(l[0]), int(l[1])))
+            points.append(Point(int(l[0]), int(l[1]), i))
+            i += 1
             
 
     print(points)
@@ -81,7 +81,7 @@ def main():
     k = int(input("Unesite K\n"))
 
     disjointSets = list()
-
+    
     for n, p in enumerate(partition(points), 1):
 
         if len(p) != k:
@@ -109,7 +109,8 @@ def main():
             for i in range(len(s)):
                 # print(s[i])
                 for j in range(i, len(s)):
-                    distance1 = distance(s[i], s[j])
+                    # distance1 = distance(s[i], s[j])
+                    distance1 = matrix[s[i].field_init][s[j].field_init]
                     if distance1 > maxDistInSet:
                         maxDistInSet = distance1
 
@@ -126,8 +127,6 @@ def main():
     print(listOfMax)
 
     print(min(listOfMax))
-
-
 
 
 if __name__ == '__main__':
