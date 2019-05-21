@@ -1,0 +1,23 @@
+Cluster 1
+Point 1: (54, 64)
+Point 2: (77, 59)
+Point 3: (68, 17)
+
+Cluster 2
+Point 1: (100, 100)
+Point 2: (69, 94)
+Point 3: (77, 99)
+Point 4: (70, 89)
+
+Cluster 3
+Point 1: (86, 8)
+Point 2: (61, 52)
+Point 3: (87, 28)
+Point 4: (93, 53)
+
+Cluster 4
+Point 1: (3, 33)
+Point 2: (29, 45)
+Point 3: (44, 55)
+Point 4: (8, 16)
+

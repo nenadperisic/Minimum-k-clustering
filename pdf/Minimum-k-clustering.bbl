@@ -1,0 +1,20 @@
+\begin{thebibliography}{1}
+
+\bibitem{aggarwal}
+C.~C. Aggarwal.
+\newblock {\em Data Mining: The Textbook}.
+\newblock Springer International Publishing Switzerland, 2015.
+
+\bibitem{paralelizacija}
+Jozef~J. Kratica.
+\newblock {\em Paralelizacija genetskih algoritama za rešavanje nekih
+  NP-kompletnih problema}.
+\newblock 2009.
+
+\bibitem{miskovic}
+Stefan Mišković.
+\newblock Simulirano kaljenje, 2019.
+\newblock on-line at:
+  \url{http://poincare.matf.bg.ac.rs/~stefan/ri/sa_uflp.pdf}.
+
+\end{thebibliography}
