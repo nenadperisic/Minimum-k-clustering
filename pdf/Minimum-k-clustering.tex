@@ -80,7 +80,7 @@
 
 \section{Uvod}
 \subsection{Opis problema}
-Problem minimalnog k-klasterovanja se može opisati na sledeći način: ulazni podaci predstavljaju skup od n tačaka u ravni T = \{t1, t2, ... tn\} koje zadovoljavaju nejednakost trougla i k koji predstavja broj skupova (klastera) u koje treba rasporediti tih n tačaka. Klasteri predstavljaju disjunktnu uniju skupova K1 U K2 U ... U Kk (tj. presek svaka dva klastera je prazan skup), pri čemu je potrebno minimizovati maksimalno rastojanje između bilo koja dve tačke u jednom skupu. Na primer, ako je d1 maksimalno rastojanje prvog skupa, d2 maksimalno rastojanje drugog, ..., dk maksimalno rastojanje k-tog skupa vrednost d koju tražimo 
+Problem minimalnog k-klasterovanja se može opisati na sledeći način: ulazni podaci predstavljaju skup od n tačaka u ravni T = \{t1, t2, ... tn\} koje zadovoljavaju nejednakost trougla i k koji predstavja broj skupova (klastera) u koje treba rasporediti tih n tačaka. Klasteri predstavljaju disjunktnu uniju skupova K1 U K2 U ... U Kk (tj. presek svaka dva klastera je prazan skup), pri čemu je potrebno minimizovati maksimalno rastojanje između bilo koje dve tačke u jednom skupu. Na primer, ako je d1 maksimalno rastojanje prvog skupa, d2 maksimalno rastojanje drugog, ..., dk maksimalno rastojanje k-tog skupa vrednost d koju tražimo 
 d = max\{d1, d2, ... dk\} treba da bude minimalna. Ovaj problem je NP-težak i za njegovo rešavanje smo koristili algoritam grube sile (eng. \textit{brute force}) koji smo implementirali u programskom jeziku Python3 (eng. \textit{Python3}) i algoritam simuliranog kaljenja kao optimizacionu tehniku implementiran u Javi (eng. \textit{Java}).
 
 
@@ -162,7 +162,7 @@ Zatim smo prolazili kroz sve generisane particije i nalazili maksimalno rastojan
      print(min(listOfMax))
 \end{lstlisting}
 
-Kao što se može primetiti, u ovom koraku postoje četiri ugnježdene for petlje što nam ukazuje na veliku složenost algoritma ($\small O(n^4)$). Zbog velike složenosti, pri većem broju tačaka ovaj algoritam će biti praktično neupotrebljiv. Iz tog razloga prelazimo na optimizacionu tehniku simuliranog kaljenja (eng. \textit{simulated annealing}).\\
+Zbog velike složenosti, pri većem broju tačaka ovaj algoritam će biti praktično neupotrebljiv. Iz tog razloga prelazimo na optimizacionu tehniku simuliranog kaljenja (eng. \textit{simulated annealing}).\\
 
 
 \subsection{Simulirano kaljenje}
